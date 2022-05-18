@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#contenedor {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.cuadrado {
+  max-width: 200px;
+  padding: 12px;
+  margin: 12px;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  box-shadow: gray 7px 7px;
+}
+.cuadrado:nth-child(even) {
+  transform: rotate(10grad);
+}
+.cuadrado:nth-child(odd) {
+  transform: rotate(-25grad);
+}
+.cuadrado:hover {
+  transform: scale(1.2);
+}
+.interior {
+  height: 100px;
+  min-height: 100px;
+  animation: tarjeta linear 4.5s infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tarjeta {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}

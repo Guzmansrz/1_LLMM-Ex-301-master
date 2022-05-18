@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  background-color: bisque;
+}
+#reloj {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 50%;
+  border-color: gray;
+  background-color: white;
+}
+#segundos {
+  width: 180px;
+  height: 180px;
+  display: block;
+  border-radius: 50%;
+  border-color: gray;
+  background-color: lightgray;
+}
